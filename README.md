@@ -1,6 +1,6 @@
 # LV 1 zadatak - Osobna stranica
 
-### LINK: 
+### LINK: https://main--frabjous-croissant-2d20ba.netlify.app/
 
 <hr />
 
