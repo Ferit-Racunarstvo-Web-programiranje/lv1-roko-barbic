@@ -11,6 +11,8 @@ header {
 .nav_links li{
     display: inline-block;
     margin-right: 10px;
+    font-family: 'Roboto';
+    size: 20px;
   }
 .nav_links li:hover{
   color: #5e3bee;
@@ -36,6 +38,7 @@ header {
 }
 .button:hover{
   background-color: #5E3BEE;
+  color: white;
 }
 .button a:hover{
   color: white;
@@ -95,14 +98,7 @@ a sad ide prvi conatienr*/
   justify-content: center;
   align-items: center;
   margin: 20px;
-}
-.button2 a{
-  text-decoration: none;
   color: white;
-  font-weight: 400;
-  font-size: 14px;
-  font-family: 'Roboto';
-  font-style: normal;
 }
 
 .button2:hover{
@@ -163,7 +159,7 @@ a sad ide prvi conatienr*/
   border: 0px solid #ccc;
   border-radius: 10.6667px;
   width: 85%;
-  height: 300.33px;
+  height: 340.33px;
 }
 .column2:hover{
   
@@ -206,9 +202,7 @@ a sad ide prvi conatienr*/
 }
 
 /*My portfolio*/
-.img_inside_column2 img{
-  width: 100%;
-}
+
 .drible{
   display: flex;
   justify-content: space-between;
@@ -221,12 +215,45 @@ a sad ide prvi conatienr*/
   padding: 13.3333px 21.3333px;
   gap: 16px;
   background: #E62872;
-  box-shadow: 0px 1px 2px rgba(16, 24, 40, 0.05);
+  color: white;
+  box-shadow: 0px 1px 2px rgba(0, 0, 0, 2);
   border-radius: 10.6667px;
   border: none;
   height: 74px;
   margin: 20%;
+  font-family: 'Roboto';
+}
+.portfolio-button:hover{
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);;
+}
 
+.card {
+  margin: 20px;
+  border: 0px solid #ccc;
+  border-radius: 9.6667px;
+  box-shadow: 0 5px 7px 0 rgba(0,0,0,0.2);
+  transition: 0.3s;
+}
+.card:hover {
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+}
+.card-container {
+  padding: 2px 16px;
+  font-family: 'Roboto';
+}
+.cards {
+  display: grid;
+  flex-direction: row;/*
+  justify-content: space-between;
+  gap: 42.67px;
+  overflow: auto;*/
+  grid-template-columns: 1fr 1fr 1fr;
+  width: 100%;
+}
+.rowDribble{
+  display: grid;
+  flex-direction: row;
+  justify-content: center;
 }
 /* testimonials*/
 .fifth_container {
@@ -237,13 +264,6 @@ a sad ide prvi conatienr*/
 .with_columns2{
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-}
-.column22 {
-  background: #F5FCFF;
-  margin: 20px;
-  border: 0px solid #ccc;
-  border-radius: 10.6667px;
-  width: 85%;
 }
 
 .row5 {
@@ -269,15 +289,9 @@ a sad ide prvi conatienr*/
   width: 70%;
   padding-left: 0;
 }
-
-.row53 {
+.row53{
   display: grid;
-  flex-direction: row;/*
-  justify-content: space-between;
-  gap: 42.67px;
-  overflow: auto;*/
   grid-template-columns: 1fr 1fr 1fr;
-  width: 100%;
 }
 
 .column5 {
@@ -299,42 +313,36 @@ a sad ide prvi conatienr*/
 
 }
 
-.testimonials-card-stars {
+.stars {
   display: flex;
   justify-content: flex-start;
   flex-direction: row;
   gap: 5.33px;
 }
 
-.testimonials-card-creator {
+.creator-card {
   display: flex;
   flex-direction: row;
 }
 
-.testimonials-card-creator-avatar {
-  width: 70px;
-  height: 70px;
+.avatar {
+  width: 75px;
+  height: 75px;
 }
 
-.testimonials-card-creator-name-occupation {
-  margin-left: 20px;
+.text22 {
+  margin-left: 22px;
+  line-height: 24px;
   font-family: Roboto;
   font-size: 16px;
   font-weight: 400;
-  line-height: 24px;
-  letter-spacing: 0em;
   text-align: left;
 
 }
 
-.testimonials-card-creator-name {
+.name {
   font-weight: 600;
-  margin-bottom: 0px;
-}
-
-
-.testimonials-card-creator-occupation {
-  margin: 0px;
+  margin-bottom: 5px;
 }
 
 /*kontakt forma*/
@@ -367,36 +375,49 @@ a sad ide prvi conatienr*/
 .contact form {
   max-width: 70rem;
   margin: 1rem auto;
-  text-align: center;
   margin-bottom: 3rem;
 }
 
-.contact form .input-box {
-  display: flex;
-  justify-content: center;
+.contact form .input-box{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  justify-content: left;
   align-items: center;
+  
   gap: 2rem;
+}
+
+.formaa{
+  display: grid;
+  grid-template-rows: 1fr 1fr;
+}
+.input-text-label{
+  display: grid;
+  grid-template-rows: 1fr 1fr;
 }
 .contact form .input-box input,
 .contact form textarea,
 .contact form label,
 .contact form select {
+  padding: 15px;
   width: 100%;
-  padding: 20px;
-  font-size: 20px;
+  font-size: 18px;
   color: #1c1e53;
   background-color: white;
-  border-radius: 15px;
-  border: 2px solid #5e3bee;
+  border-radius: 5px;
+  border: 1.5px solid #5e3bee;
   margin: .7rem 0;
 }
 
 .contact form .input-box input {
-  width: 48%;
+  width: 90%;
 }
 
 .input-box1 p {
   float: left;
+  font-family: 'Roboto';
+  font-style: normal;
+  font-size: 18px;
 }
 
 .contact form textarea {
@@ -407,11 +428,14 @@ a sad ide prvi conatienr*/
   font-family: 'Roboto';
   font-style: normal;
   font-weight: 400;
-  font-size: 20px;
+  font-size: 22px;
   height: 50px;
 
 }
-
+.checkbox{
+  display: grid;
+  grid-template-columns: 5% 95%;
+}
 .button11{
   margin-left: 47%;
 }
